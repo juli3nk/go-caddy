@@ -1,0 +1,30 @@
+FROM golang:1.12-alpine3.9 AS caddy
+
+COPY .caddybuild.yml /usr/src/caddy/.caddybuild.yml
+
+RUN apk --update add \
+	binutils \
+	ca-certificates \
+	git \
+	musl-dev
+RUN go get github.com/juliengk/go-caddy/cmd/caddybuild
+
+WORKDIR /usr/src/caddy
+
+RUN caddybuild build
+
+
+FROM alpine:3.9
+
+COPY --from=caddy /tmp/caddy/caddy /usr/local/bin/caddy
+COPY Caddyfile /Caddyfile
+
+RUN apk --update --no-cache add \
+		ca-certificates \
+		git \
+	&& adduser -Du 1000 caddy
+
+USER caddy
+
+ENTRYPOINT ["caddy"]
+CMD ["-conf", "/Caddyfile"]

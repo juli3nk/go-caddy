@@ -1,0 +1,7 @@
+0.0.0.0:8080
+
+tls off
+log stdout
+
+root /home/caddy/go-caddy/example/hello/www
+git https://github.com/juliengk/go-caddy /home/caddy/go-caddy
