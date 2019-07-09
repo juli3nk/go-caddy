@@ -3,7 +3,7 @@ package build
 var mainGoTemplate = `package main
 
 import (
-	"github.com/mholt/caddy/caddy/caddymain"
+	"github.com/caddyserver/caddy/caddy/caddymain"
 
 	{{- range $plugin := .Plugins }}
 	_ "{{ $plugin }}"
