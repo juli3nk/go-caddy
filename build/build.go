@@ -61,7 +61,7 @@ func (b *Build) Run() error {
 		return err
 	}
 
-	cmd = []string{"go", "get", "github.com/mholt/caddy"}
+	cmd = []string{"go", "get", "github.com/caddyserver/caddy"}
 	if err := utils.RunCommand(cmd, dir); err != nil {
 		return err
 	}
