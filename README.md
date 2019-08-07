@@ -35,7 +35,7 @@ Docs: https://github.com/abiosoft/caddy-git/blob/master/README.md
 ```
 
 ### Build
-To build a custom binary including plugins
+To build a custom binary including plugins follow the steps below or check out the the directory `example`.
 
 1. Create a `.caddybuild.yml` config file
 
