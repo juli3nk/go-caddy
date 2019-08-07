@@ -1,4 +1,4 @@
-FROM golang:1.12-alpine3.9 AS caddy
+FROM golang:1.12-alpine3.10 AS caddy
 
 COPY .caddybuild.yml /usr/src/caddy/.caddybuild.yml
 
@@ -14,17 +14,18 @@ WORKDIR /usr/src/caddy
 RUN caddybuild build
 
 
-FROM alpine:3.9
+FROM alpine:3.10
 
 COPY --from=caddy /tmp/caddy/caddy /usr/local/bin/caddy
 COPY Caddyfile /Caddyfile
 
 RUN apk --update --no-cache add \
 		ca-certificates \
-		git \
-	&& adduser -Du 1000 caddy
+		git
 
-USER caddy
+USER nobody:nobody
+
+EXPOSE 8080
 
 ENTRYPOINT ["caddy"]
 CMD ["-conf", "/Caddyfile"]
