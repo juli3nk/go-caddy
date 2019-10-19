@@ -7,7 +7,7 @@ import (
 	"github.com/juliengk/go-utils/json"
 )
 
-const URL = "https://caddyserver.com/api/download-page"
+const URL = "https://caddyserver.com/v1/api/download-page"
 
 func New() (*API, error) {
 	data, err := utils.GetURL(URL)
