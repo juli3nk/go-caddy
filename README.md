@@ -3,7 +3,7 @@
 ## Installation
 
 ```sh
-# go get github.com/juliengk/go-caddy/cmd/caddybuild
+# go get github.com/juli3nk/go-caddy/cmd/caddybuild
 ```
 
 ## Usage

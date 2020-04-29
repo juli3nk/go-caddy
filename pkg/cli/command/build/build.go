@@ -3,9 +3,9 @@ package build
 import (
 	"log"
 
-	"github.com/juliengk/go-caddy/build"
-	"github.com/juliengk/go-caddy/pkg/config"
-	"github.com/juliengk/go-caddy/plugins"
+	"github.com/juli3nk/go-caddy/build"
+	"github.com/juli3nk/go-caddy/pkg/config"
+	"github.com/juli3nk/go-caddy/plugins"
 	"github.com/spf13/cobra"
 )
 

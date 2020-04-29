@@ -6,8 +6,8 @@ import (
 	"path"
 	"text/template"
 
-	"github.com/juliengk/go-caddy/pkg/utils"
-	"github.com/juliengk/go-utils/filedir"
+	"github.com/juli3nk/go-caddy/pkg/utils"
+	"github.com/juli3nk/go-utils/filedir"
 )
 
 var dir = "/tmp/caddy"

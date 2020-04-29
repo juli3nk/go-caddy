@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/juliengk/go-caddy/plugins"
+	"github.com/juli3nk/go-caddy/plugins"
 	"github.com/spf13/cobra"
 )
 

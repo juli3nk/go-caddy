@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/juliengk/go-caddy/pkg/cli/command"
+	"github.com/juli3nk/go-caddy/pkg/cli/command"
 )
 
 func main() {

@@ -6,8 +6,8 @@ import (
 	"os"
 	"text/tabwriter"
 
-//	"github.com/juliengk/go-utils"
-	"github.com/juliengk/go-caddy/plugins"
+//	"github.com/juli3nk/go-utils"
+	"github.com/juli3nk/go-caddy/plugins"
 	"github.com/spf13/cobra"
 )
 

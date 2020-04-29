@@ -1,8 +1,8 @@
 package command
 
 import (
-	"github.com/juliengk/go-caddy/pkg/cli/command/build"
-	"github.com/juliengk/go-caddy/pkg/cli/command/plugin"
+	"github.com/juli3nk/go-caddy/pkg/cli/command/build"
+	"github.com/juli3nk/go-caddy/pkg/cli/command/plugin"
 	"github.com/spf13/cobra"
 )
 

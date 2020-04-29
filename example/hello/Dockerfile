@@ -7,7 +7,7 @@ RUN apk --update add \
 	ca-certificates \
 	git \
 	musl-dev
-RUN go get github.com/juliengk/go-caddy/cmd/caddybuild
+RUN go get github.com/juli3nk/go-caddy/cmd/caddybuild
 
 WORKDIR /usr/src/caddy
 

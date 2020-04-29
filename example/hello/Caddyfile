@@ -4,4 +4,4 @@ tls off
 log stdout
 
 root /home/caddy/go-caddy/example/hello/www
-git https://github.com/juliengk/go-caddy /home/caddy/go-caddy
+git https://github.com/juli3nk/go-caddy /home/caddy/go-caddy

@@ -3,8 +3,8 @@ package plugins
 import (
 	"fmt"
 
-	"github.com/juliengk/go-caddy/pkg/utils"
-	"github.com/juliengk/go-utils/json"
+	"github.com/juli3nk/go-caddy/pkg/utils"
+	"github.com/juli3nk/go-utils/json"
 )
 
 const URL = "https://caddyserver.com/v1/api/download-page"
